@@ -1,0 +1,10 @@
+.banner-container {
+  width: 100%;
+  height: calc(100vh - 81px);
+  background-color: gray;
+}
+
+.movie {
+  width: 100%;
+  height: calc(100vh - 81px);
+}
