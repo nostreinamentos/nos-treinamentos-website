@@ -42,11 +42,11 @@
   padding: 20px 30px;
   font-size: 20px;
   font-weight: 400;
-  border: none;
   background-color: #c72222;
   color: #fff;
   cursor: pointer;
   border: 2px solid transparent;
+  transition: .3s;
 }
 
 .banner-content-container button:hover {
@@ -60,4 +60,45 @@
   height: 100%;
   background: url('../assets/bread-background.jpg');
   background-size: cover;
+}
+
+@media(max-width: 1195px) {
+  .banner-container {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .banner-subcontainer-one {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .banner-content-container {
+    max-width: initial;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .banner-content-container h1 {
+    font-size: 40px;
+  }
+
+  .banner-content-container p {
+    font-size: 16px;
+  }
+  
+  .banner-content-container button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .banner-subcontainer-two {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    order: -1;
+  }
 }
