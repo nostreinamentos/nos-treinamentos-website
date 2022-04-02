@@ -26,35 +26,34 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header-container">
-      <nav class="header-subcontainer">
-        <a class="main-logo-container" href="/">
-          <img
-            class="main-logo"
-            src="./assets/nos-logo.svg"
-            alt="Logo Nós Trinamentos"
-          />
+    <header>
+      <nav>
+        <a href="/" id="logo">
+          <img src="./assets/nos-logo.svg" alt="Logo Nós Treinamentos">  
         </a>
 
-        <ul class="menu">
-          <li>
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
-          </li>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
         </ul>
+    
+        <div id="hamburger">
+          <div class="line" id="one"></div>
+          <div class="line" id="two"></div>
+          <div class="line" id="three"></div>
+        </div>
       </nav>
-
-      <nav class="header-subcontainer-mobile">
-        <a class="main-logo-container-mobile" href="/">
-          <img
-            class="main-logo-mobile"
-            src="./assets/nos-logo.svg"
-            alt="Logo Nós Trinamentos"
-          />
-        </a>
-      </nav>
+    
+      <div class="mobile-menu">
+        <ul class="mobile-menu__items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Cantact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -76,4 +75,12 @@
       </section>
     </main>
   </body>
+
+  <!-- Scripts -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./script/header.js"></script>
 </html>
