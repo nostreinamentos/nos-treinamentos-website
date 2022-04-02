@@ -1,10 +1,63 @@
 .banner-container {
   width: 100%;
-  height: calc(100vh - 81px);
+  height: 70vh;
+  display: flex;
   background-color: gray;
 }
 
-.movie {
-  width: 100%;
-  height: calc(100vh - 81px);
+.banner-subcontainer-one {
+  width: 50%;
+  height: 100%;
+  background-color: #fcd7ae;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.banner-content-container {
+  max-width: 600px;
+  height: 100%;
+  margin-left: calc(100% - 600px);
+  padding: 20px 40px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #353535;
+}
+
+.banner-content-container h1 {
+  font-family: 'Lora', serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.banner-content-container p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.banner-content-container button {
+  width: fit-content;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  background-color: #c72222;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.banner-content-container button:hover {
+  background-color: transparent;
+  border-color: #c72222;
+  color: #c72222;
+}
+
+.banner-subcontainer-two {
+  width: 50%;
+  height: 100%;
+  background: url('../assets/bread-background.jpg');
+  background-size: cover;
 }
