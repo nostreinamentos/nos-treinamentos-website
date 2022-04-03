@@ -39,3 +39,38 @@
   font-weight: 400;
   text-align: center;
 }
+
+@media(max-width: 1195px) {
+  .benefits-contaner {
+    height: auto;
+  }
+
+  .benefits-subcontainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .benefits-box {
+    width: 265px;
+    border: none;
+    margin-bottom: 30px;
+  }
+
+  .benefits-box:last-child {
+    margin-bottom: initial;
+  }
+
+  .benefits-box img {
+    width: 35px;
+    margin-bottom: 5px;
+  }
+  
+  .benefits-box p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+}

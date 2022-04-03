@@ -24,10 +24,6 @@ nav #logo img {
   transition: .3s;
 }
 
-nav #logo:hover img {
-  transform: scale(0.9);
-}
-
 nav #menu {
   position: relative;
   display: flex;
@@ -62,7 +58,6 @@ nav #menu li a {
 }
 
 #hamburger {
-  position: absolute;
   right: 20px;
   top: 14px;
   z-index: 999;
@@ -70,8 +65,8 @@ nav #menu li a {
   height: 30px;
   cursor: pointer;
   transition: all 0.3s ease-out;
-  visibility: hidden;
   opacity: 0;
+  display: none;
 }
 
 #hamburger .line {
@@ -95,7 +90,7 @@ nav #menu li a {
 
 @media (max-width: 1195px) {
   #hamburger {
-    visibility: visible;
+    display: block;
     opacity: 1;
   }
 }
