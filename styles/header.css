@@ -76,6 +76,10 @@ nav #menu li a {
   backface-visibility: hidden;
 }
 
+#hamburger.active {
+  position: fixed;
+}
+
 #hamburger.active #one {
   transform: rotate(45deg) translateX(6px) translateY(6px);
 }
@@ -97,7 +101,7 @@ nav #menu li a {
 
 .mobile-menu {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0px;
   background: #ebebeb;
   width: 100%;
